@@ -1,0 +1,62 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TIP CALCULATOR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <form id="form">
+       <h1> TIP CALCULATOR </h1>
+       <div>
+           <h2> How much was your bill?</h2>
+           $<input type="tel" name="bill" id="bill" required>
+       </div>
+       <div>
+        <h2> How was your service?</h2>
+        <select id="select" required>
+            <option> choose </option>
+            <option  value="0.3">10% - Outstanding</option>
+            <option  value="0.3">20% - Outstanding</option>
+            <option  value="0.3">30% - Outstanding</option>
+            <option  value="0.3">40% - Outstanding</option>
+            <option  value="0.3">50% - Outstanding</option>
+            <option  value="0.3">60% - Outstanding</option>
+            <option  value="0.3">70% - Outstanding</option>
+            <option  value="0.3">80% - Outstanding</option>
+            <option  value="0.3">90% - Outstanding</option>
+            <option  value="0.3">99% - Outstanding</option>
+
+        </select> 
+    </div>
+    <div>
+        <h2> How many people are sharing the bill?</h2>
+       <input type="tel" name="bill" id="people" placeholder="number of people" required> 
+    </div>
+
+    <button class="button" type="button" name="button" onclick=" calculate ()"> CALCULATE!</button>
+    
+</form>
+    <br>
+    <div class="result" id="result">
+        <h1>TIP AMOUNT</h1>
+        <h3 id="res">$<span id="resl"> </span> </h3>
+        <h3> each </h3>
+    </div>
+    <script type="text/javascript">
+     function calculate(){
+
+            var bill= document.getElementById("bill").value;
+            var people= document.getElementById("people").value;
+            var perh=document.getElementById("select").value;
+            var result=( bill * perh) / people ;
+            document.getElementById("resl").innerHTML=result;
+           
+            
+        } 
+ 
+</script>
+</body>
+</html>

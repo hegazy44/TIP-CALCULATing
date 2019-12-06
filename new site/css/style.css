@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    font-family: 'Signika', sans-serif;
+}
+body{
+   background-image: url(../image/people-drinking-liquor-and-talking-on-dining-table-close-up-696218.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background:  linear-gradient(to right , rgb(201, 120, 221),#523552, #52355258)
+    
+}
+form{
+    background: rgba(142, 107, 207, 0.658);
+    display: inline-block;   
+    text-align: center; 
+    position: relative;
+    margin:40px;
+    border-radius: 30px;  
+    transition: 0.5s;
+    animation: topdown   2s ease-in-out;
+}
+@keyframes topdown{
+    0%{
+        margin-top:-500px
+    }
+    100%{margin-top:35px;
+    }
+}
+form h1{
+    padding: 10px;
+    text-align: center;
+    background: #523552;
+    border-radius: 10px;
+    color: yellow;
+}
+form div{
+    
+    padding: 10px;
+    text-align: center;
+
+}
+form div h2{
+    padding: 5px;
+   
+}
+
+form div input{
+    width: 90%;
+    color: #ffffff;
+    border: 0px;
+    border-bottom: #523552 3px solid;
+    border-radius: 10px;
+    background: #52355200;
+    padding: 5px ;
+}
+form div input::placeholder{
+    color: rgba(255, 255, 0, 0.849);
+}
+form div select{
+    width: 90%;
+    color: #ffffff;
+    background: #523552fb;
+    border-radius: 10px;
+    padding: 3px;
+
+}
+form div select option{
+ color: yellow;
+}
+form button{
+    cursor: pointer;
+    width: 50%;
+    padding: 20;
+    color: #ffffff;
+    background: #523552;
+    border: 0px solid ;
+    border-radius: 10px;
+    margin: 10px 5px 10px 5px;
+    letter-spacing: 3px;
+    font-size: 17px;
+    transition: 0.5s;
+}
+form button:hover{
+    background: rgb(162, 0, 255);
+    color: yellow;
+    box-shadow: 0 0 10px #c671e7, 0 0 40px #c671e7, 0 0 80px #c671e7 ;
+    width:52%;
+    padding: 25px;
+    font-size: 19px; 
+}
+.result{
+    background: #523552;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+    width: 25%;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.5s;
+    animation: divleft 2s ease;
+}
+
+@keyframes divleft{
+    0%{
+        margin-top: -300px
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+.result h3 span{
+    color: yellow;
+}
